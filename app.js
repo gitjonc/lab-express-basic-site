@@ -28,10 +28,11 @@ app.listen(port, () => {
     console.log(`Listening to port ${port}`)
 })
 
-const imgContent = document.querySelectorAll('.img-content-hover');
-const imgContent = document.querySelectorAll('.img-content-hover');
 
 function showImgContent(e) {
+
+    const imgContent = document.querySelectorAll('.img-content-hover');
+
   for(var i = 0; i < imgContent.length; i++) {
     x = e.pageX;
     y = e.pageY;
@@ -39,13 +40,13 @@ function showImgContent(e) {
   }
 };
 
-document.addEventListener('mousemove', showImgContent);
+// document.addEventListener('mousemove', showImgContent);
 function showImgContent(e) {
   for(var i = 0; i < imgContent.length; i++) {
     x = e.pageX;
     y = e.pageY;
     imgContent[i].style.transform = `translate3d(${x}px, ${y}px, 0)`;
   }
+  // this.document.addEventListener('mousemove', showImgContent);
 };
 
-document.addEventListener('mousemove', showImgContent);
